@@ -1,5 +1,6 @@
 <h1>New game</h1>
-<p><%= @grid %></p>
+<p><%= @grid.join(' | ') %></p>
+<p>What is the longest word you can find?</p>
 <form action="/score" method="post" data-turbo="false">
   <div class="form-group">
       <input type="text" name="word" class="form-control" style="width: 300px;">
